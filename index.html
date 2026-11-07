@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sachin Enterprises - reliable car, tempo traveller and bus rentals from Pune across India.">
+  <title>Sachin Enterprises | Tours & Travels</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home"><span class="brand-mark">SE</span><span>SACHIN <b>ENTERPRISES</b><small>TOURS & TRAVELS · PUNE</small></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a><a href="#fleet">Our Fleet</a><a href="#gallery">Gallery</a>
+    <a href="#quote">Invoice & Quotation</a><a href="#contact" class="nav-cta">Contact Us</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="eyebrow">YOUR JOURNEY, OUR RESPONSIBILITY</span>
+    <h1>Travel comfortably.<br><em>Arrive confidently.</em></h1>
+    <p>Well-maintained vehicles, dependable service and travel solutions from Pune to destinations across India.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="#contact">Book Your Vehicle</a><a class="btn btn-outline" href="#fleet">Explore Our Fleet</a></div>
+    <div class="hero-note"><span>✓ Clean & maintained vehicles</span><span>✓ Service across India</span><span>✓ Personalised travel support</span></div>
+  </div>
+  <div class="hero-visual"><div class="visual-card"><div class="road-line"></div><div class="visual-label">PUNE <span>→</span> ALL INDIA</div><div class="vehicle-emoji">🚌</div><div class="visual-caption">The right ride for every journey.</div></div></div>
+</section>
+
+<section class="trust-strip"><div><strong>Cars</strong><span>For everyday travel</span></div><div><strong>Tempo Travellers</strong><span>For groups & outings</span></div><div><strong>Luxury Buses</strong><span>For large journeys</span></div><div><strong>Pan-India</strong><span>Rentals from Pune</span></div></section>
+
+<section class="section" id="fleet">
+  <div class="section-heading"><div><span class="eyebrow">OUR VEHICLES</span><h2>A vehicle for every plan.</h2></div><p>Choose from comfortable cars, group travellers and buses for local, outstation and all-India travel.</p></div>
+  <div class="fleet-grid">
+    <article class="fleet-card"><div class="fleet-icon">🚘</div><h3>Cars & SUVs</h3><p>Comfortable options for family trips, business travel and airport transfers.</p><ul><li>Swift Dzire</li><li>Private Creta</li><li>Innova Crysta</li></ul></article>
+    <article class="fleet-card"><div class="fleet-icon">🚐</div><h3>Tempo Travellers</h3><p>Spacious group travel options, available in AC and non-AC configurations.</p><ul><li>17-seater AC / non-AC</li><li>20-seater AC / non-AC</li></ul></article>
+    <article class="fleet-card"><div class="fleet-icon">🚌</div><h3>Buses & Coaches</h3><p>Well-maintained buses for tours, events, corporate and group journeys.</p><ul><li>32-seater AC bus</li><li>45-seater AC bus</li><li>50-seater AC bus</li><li>Sleeper Volvo bus</li><li>Urbania</li></ul></article>
+  </div>
+  <p class="fleet-footnote">Vehicle availability and specifications are subject to confirmation. Contact us for the best option for your route and group size.</p>
+</section>
+
+<section class="banner"><div><span class="eyebrow">FROM PUNE, ACROSS INDIA</span><h2>More than a ride.<br>Travel made easier.</h2><p>Whether it’s a family holiday, corporate movement, wedding, pilgrimage or event, we help you plan the journey with the right vehicle.</p></div><a class="btn btn-light" href="tel:+91997095257">Call 99709 5257</a></section>
+
+<section class="section gallery-section" id="gallery">
+  <div class="section-heading"><div><span class="eyebrow">TRAVEL MOMENTS</span><h2>Our gallery.</h2></div><p>Share photos and videos of your vehicles, trips and completed events here.</p></div>
+  <div class="gallery-grid" id="galleryGrid">
+    <div class="gallery-placeholder"><span>🚐</span><b>Vehicle photos</b><small>Gallery uploads will appear here</small></div>
+  </div>
+  <p class="small-note">To publish your own media, follow the simple instructions in the included README file.</p>
+</section>
+
+<section class="section quote-section" id="quote">
+  <div class="section-heading"><div><span class="eyebrow">QUICK DOCUMENT BUILDER</span><h2>Create a quotation or invoice.</h2></div><p>Prepare a professional travel quotation or invoice, then print or save it as a PDF.</p></div>
+  <div class="builder">
+    <div class="builder-form">
+      <div class="form-top"><label>Document type<select id="docType"><option value="Quotation">Quotation</option><option value="Invoice">Invoice</option></select></label><label>Document number<input id="docNo" placeholder="SE-001"></label><label>Date<input id="docDate" type="date"></label></div>
+      <h3>Customer details</h3>
+      <div class="form-grid"><label>Customer / Company<input id="customer" placeholder="Customer name"></label><label>Phone<input id="customerPhone" placeholder="Customer phone"></label><label class="wide">Address<input id="customerAddress" placeholder="Customer address"></label></div>
+      <h3>Trip details</h3>
+      <div class="form-grid"><label>Pickup location<input id="pickup" placeholder="Pune"></label><label>Destination<input id="destination" placeholder="Destination"></label><label>Journey date<input id="journeyDate" type="date"></label><label>Vehicle<input id="vehicle" placeholder="e.g. 17-seater AC Tempo Traveller"></label></div>
+      <h3>Charges</h3>
+      <div class="items-head"><span>Description</span><span>Qty</span><span>Rate (₹)</span><span>Amount</span><span></span></div>
+      <div id="items">
+        <div class="item-row"><input class="desc" value="Vehicle rental / travel service"><input class="qty" type="number" min="0" value="1"><input class="rate" type="number" min="0" value="0"><span class="line-total">₹0.00</span><button class="remove" type="button" title="Remove item">×</button></div>
+      </div>
+      <button class="add-line" id="addLine" type="button">＋ Add another charge</button>
+      <div class="form-grid"><label>Additional notes<textarea id="notes" rows="3" placeholder="Terms, inclusions, exclusions, payment details..."></textarea></label><label>GST (%)<input id="gst" type="number" min="0" value="0"></label></div>
+      <button class="btn btn-primary generate" id="generate" type="button">Update document preview</button>
+    </div>
+    <div class="preview-wrap"><div class="preview-label">DOCUMENT PREVIEW</div><div class="paper" id="paper">
+      <div class="paper-head"><div><div class="paper-brand">SACHIN ENTERPRISES</div><div class="paper-sub">TOURS & TRAVELS · PUNE</div></div><div class="paper-doc"><strong id="pType">QUOTATION</strong><span id="pNo">SE-001</span><span id="pDate"></span></div></div>
+      <hr><div class="paper-contact">Pune, Maharashtra · Phone: 9970959257 · sachinenterprises1012@gmail.com</div>
+      <div class="paper-customer"><b>Bill To</b><div id="pCustomer">Customer name</div><div id="pCustomerPhone"></div><div id="pCustomerAddress"></div></div>
+      <div class="trip-summary"><div><small>FROM</small><b id="pPickup">—</b></div><div class="trip-arrow">→</div><div><small>TO</small><b id="pDestination">—</b></div></div>
+      <div class="paper-trip"><span>Journey: <b id="pJourney">—</b></span><span>Vehicle: <b id="pVehicle">—</b></span></div>
+      <table class="paper-table"><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody id="pItems"></tbody></table>
+      <div class="totals"><div><span>Subtotal</span><b id="pSubtotal">₹0.00</b></div><div><span>GST</span><b id="pGst">₹0.00</b></div><div class="grand"><span>Total</span><b id="pTotal">₹0.00</b></div></div>
+      <div class="paper-notes"><b>Notes & Terms</b><p id="pNotes">Thank you for choosing Sachin Enterprises.</p></div>
+      <div class="paper-footer">Thank you for your business!<br><b>SACHIN ENTERPRISES</b> · 9970959257</div>
+    </div><button class="btn btn-dark print-btn" id="printBtn" type="button">Print / Save as PDF</button><button class="btn btn-primary print-btn" id="saveDocBtn" type="button">Save to Admin Panel</button><p class="small-note">Tip: In the print window, choose “Save as PDF” to download or share your document.</p></div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact"><div class="contact-copy"><span class="eyebrow">LET’S PLAN YOUR JOURNEY</span><h2>Where would you like to go?</h2><p>Tell us your travel date, route and group size. We’ll help you choose a suitable vehicle.</p><div class="contact-links"><a href="tel:+91997095257"><span>PHONE</span><b>9970959257</b></a><a href="https://wa.me/91997095257" target="_blank" rel="noopener"><span>WHATSAPP</span><b>Chat with us ↗</b></a><a href="mailto:sachinenterprises1012@gmail.com"><span>EMAIL</span><b>sachinenterprises1012@gmail.com</b></a></div></div>
+  <form class="contact-form" id="contactForm"><h3>Send an enquiry</h3><label>Your name<input id="enqName" required placeholder="Enter your name"></label><label>Phone number<input id="enqPhone" required placeholder="Enter your phone number"></label><label>Travel requirement<textarea id="enqMessage" required rows="4" placeholder="Pickup, destination, date, vehicle and number of passengers"></textarea></label><button class="btn btn-primary" type="submit">Send enquiry by email</button><small id="emailHelp">Your enquiry will open in your email app and can also be saved to our admin system.</small></form>
+</section>
+</main>
+<footer><a class="brand footer-brand" href="#home"><span class="brand-mark">SE</span><span>SACHIN <b>ENTERPRISES</b><small>TOURS & TRAVELS · PUNE</small></span></a><span>© <span id="year"></span> Sachin Enterprises. All rights reserved.</span><a href="admin.html">Admin Login</a><a href="#home">Back to top ↑</a></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="script.js"></script>
+</body>
+</html>
