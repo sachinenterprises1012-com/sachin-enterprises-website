@@ -13,7 +13,7 @@
   <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
   <nav id="nav">
     <a href="#home">Home</a><a href="#fleet">Our Fleet</a><a href="#gallery">Gallery</a>
-    <a href="#quote">Invoice & Quotation</a><a href="#contact" class="nav-cta">Contact Us</a>
+    <a href="admin.html">Billing Login</a><a href="#contact" class="nav-cta">Contact Us</a>
   </nav>
 </header>
 
@@ -51,35 +51,12 @@
   <p class="small-note">To publish your own media, follow the simple instructions in the included README file.</p>
 </section>
 
-<section class="section quote-section" id="quote">
-  <div class="section-heading"><div><span class="eyebrow">QUICK DOCUMENT BUILDER</span><h2>Create a quotation or invoice.</h2></div><p>Prepare a professional travel quotation or invoice, then print or save it as a PDF.</p></div>
-  <div class="builder">
-    <div class="builder-form">
-      <div class="form-top"><label>Document type<select id="docType"><option value="Quotation">Quotation</option><option value="Invoice">Invoice</option></select></label><label>Document number<input id="docNo" placeholder="SE-001"></label><label>Date<input id="docDate" type="date"></label></div>
-      <h3>Customer details</h3>
-      <div class="form-grid"><label>Customer / Company<input id="customer" placeholder="Customer name"></label><label>Phone<input id="customerPhone" placeholder="Customer phone"></label><label class="wide">Address<input id="customerAddress" placeholder="Customer address"></label></div>
-      <h3>Trip details</h3>
-      <div class="form-grid"><label>Pickup location<input id="pickup" placeholder="Pune"></label><label>Destination<input id="destination" placeholder="Destination"></label><label>Journey date<input id="journeyDate" type="date"></label><label>Vehicle<input id="vehicle" placeholder="e.g. 17-seater AC Tempo Traveller"></label></div>
-      <h3>Charges</h3>
-      <div class="items-head"><span>Description</span><span>Qty</span><span>Rate (₹)</span><span>Amount</span><span></span></div>
-      <div id="items">
-        <div class="item-row"><input class="desc" value="Vehicle rental / travel service"><input class="qty" type="number" min="0" value="1"><input class="rate" type="number" min="0" value="0"><span class="line-total">₹0.00</span><button class="remove" type="button" title="Remove item">×</button></div>
-      </div>
-      <button class="add-line" id="addLine" type="button">＋ Add another charge</button>
-      <div class="form-grid"><label>Additional notes<textarea id="notes" rows="3" placeholder="Terms, inclusions, exclusions, payment details..."></textarea></label><label>GST (%)<input id="gst" type="number" min="0" value="0"></label></div>
-      <button class="btn btn-primary generate" id="generate" type="button">Update document preview</button>
-    </div>
-    <div class="preview-wrap"><div class="preview-label">DOCUMENT PREVIEW</div><div class="paper" id="paper">
-      <div class="paper-head"><div><div class="paper-brand">SACHIN ENTERPRISES</div><div class="paper-sub">TOURS & TRAVELS · PUNE</div></div><div class="paper-doc"><strong id="pType">QUOTATION</strong><span id="pNo">SE-001</span><span id="pDate"></span></div></div>
-      <hr><div class="paper-contact">Pune, Maharashtra · Phone: 9970959257 · sachinenterprises1012@gmail.com</div>
-      <div class="paper-customer"><b>Bill To</b><div id="pCustomer">Customer name</div><div id="pCustomerPhone"></div><div id="pCustomerAddress"></div></div>
-      <div class="trip-summary"><div><small>FROM</small><b id="pPickup">—</b></div><div class="trip-arrow">→</div><div><small>TO</small><b id="pDestination">—</b></div></div>
-      <div class="paper-trip"><span>Journey: <b id="pJourney">—</b></span><span>Vehicle: <b id="pVehicle">—</b></span></div>
-      <table class="paper-table"><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead><tbody id="pItems"></tbody></table>
-      <div class="totals"><div><span>Subtotal</span><b id="pSubtotal">₹0.00</b></div><div><span>GST</span><b id="pGst">₹0.00</b></div><div class="grand"><span>Total</span><b id="pTotal">₹0.00</b></div></div>
-      <div class="paper-notes"><b>Notes & Terms</b><p id="pNotes">Thank you for choosing Sachin Enterprises.</p></div>
-      <div class="paper-footer">Thank you for your business!<br><b>SACHIN ENTERPRISES</b> · 9970959257</div>
-    </div><button class="btn btn-dark print-btn" id="printBtn" type="button">Print / Save as PDF</button><button class="btn btn-primary print-btn" id="saveDocBtn" type="button">Save to Admin Panel</button><p class="small-note">Tip: In the print window, choose “Save as PDF” to download or share your document.</p></div>
+<section class="section quote-section" id="billing-info">
+  <div class="section-heading"><div><span class="eyebrow">PRIVATE BUSINESS BILLING</span><h2>Invoices & quotations, made to order.</h2></div><p>Our billing desk prepares customer-specific quotations and invoices with flexible vehicle rates, trip charges, taxes and payment details.</p></div>
+  <div class="builder" style="display:block;padding:28px;border:1px solid var(--line);border-radius:14px;background:#fff">
+    <h3>Need a quotation or invoice?</h3><p>For billing enquiries, contact Sachin Enterprises directly. Our private business billing panel is reserved for authorised staff.</p>
+    <a class="btn btn-primary" href="admin.html">Private Billing Login</a>
+    <a class="btn btn-outline" href="tel:+91997095257">Call 9970959257</a>
   </div>
 </section>
 
