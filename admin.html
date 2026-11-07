@@ -15,7 +15,7 @@
 <section id="events" class="panel hidden">
  <div class="admin-card">
   <h2 class="section-title">Event / Multiple Vehicle Booking</h2>
-  <p class="status">Create one event booking with a common schedule and separate schedules and pricing for each vehicle.</p>
+  <p class="status">Create one event booking with multiple vehicles, destinations and vehicle-wise pricing.</p>
   <div class="bill-grid" style="margin-top:14px">
    <label>Document type<select id="eDocType"><option value="quotation">Quotation / Estimate</option><option value="invoice">Invoice</option></select></label>
    <label>Trip type<select id="eTripType"><option>Event Transportation</option><option>Local</option><option>Outstation</option><option>Airport Transfer</option><option>Custom Trip</option></select></label>
@@ -32,8 +32,8 @@
    <label>Common departure time<input id="eDepart" type="time"></label>
    <label class="wide">Common schedule / instructions<textarea id="eScheduleNotes" rows="2" placeholder="Common route, event instructions, reporting details..."></textarea></label>
   </div>
-  <h3 style="margin:22px 0 5px">Vehicle allocation & individual schedules</h3>
-  <p class="status">Add as many vehicle lines as required. Every line can have its own schedule and pricing method.</p>
+  <h3 style="margin:22px 0 5px">Vehicle allocation & charges</h3>
+  <p class="status">Add as many vehicles as required. Enter a destination and RTO permit charge for each vehicle when applicable.</p>
   <div id="eventVehicles"></div>
   <div class="admin-actions no-print"><button id="addEventVehicle" class="admin-btn secondary" type="button">＋ Add vehicle</button></div>
   <div class="bill-grid" style="margin-top:18px">
@@ -63,7 +63,7 @@
  </div>
  <div class="bill-preview" id="eventPreview">
   <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start">
-   <div style="display:flex;gap:10px;align-items:center"><img src="logo.png" alt="Sachin Enterprises logo" style="width:105px;max-height:75px;object-fit:contain;background:#102b4d;border-radius:5px"><div style="display:flex;align-items:center;gap:12px"><img src="logo.png" alt="Sachin Enterprises logo" style="width:125px;max-height:85px;object-fit:contain;background:#102b4d;border-radius:5px"><div><h2>SACHIN ENTERPRISES</h2><small class="muted">Tours & Travels · Pune, Maharashtra</small><p class="muted">9970959257<br>sachinenterprises1012@gmail.com</p></div></div></div>
+   <div style="display:flex;gap:12px;align-items:center"><img src="logo.png" alt="Sachin Enterprises logo" style="width:125px;max-height:85px;object-fit:contain;background:#102b4d;border-radius:5px"><div><h2>SACHIN ENTERPRISES</h2><small class="muted">Tours & Travels · Pune, Maharashtra</small><p class="muted">9970959257<br>sachinenterprises1012@gmail.com</p></div></div></div>
    <div style="text-align:right"><h2 id="epType">QUOTATION</h2><small id="epNumber">Draft</small></div>
   </div>
   <hr style="border:0;border-top:1px solid #ddd">
