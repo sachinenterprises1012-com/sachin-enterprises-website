@@ -75,6 +75,42 @@ body{background:linear-gradient(135deg,#f5f8f8 0%,#eef5f3 55%,#f8f6f1 100%);colo
  body.print-duty .no-print{display:none!important}
 }
 
+
+/* CREATIVE INVOICE THEME — navy/teal with warm amber gradient; data and fields unchanged */
+#billPreview{position:relative!important;overflow:hidden!important;background:#fff!important;border:1px solid #d9e5e8!important;border-radius:18px!important;padding:0!important;box-shadow:0 16px 42px rgba(14,48,62,.13)!important;color:#1d303b!important}
+#billPreview:before{content:"";display:block;height:7px;background:linear-gradient(90deg,#102f49 0%,#087c78 58%,#f29a38 100%)}
+#billPreview>div:first-child{position:relative!important;margin:0!important;padding:24px 22px 20px!important;align-items:flex-start!important;background:linear-gradient(125deg,#102f49 0%,#075d65 72%,#087c78 100%)!important;color:#fff!important}
+#billPreview>div:first-child h2{color:#fff!important;font-size:19px!important;letter-spacing:.55px!important;font-weight:850!important}
+#billPreview>div:first-child .muted{color:#d6e8e9!important}
+#billPreview>div:first-child #pvType{display:inline-block!important;background:linear-gradient(110deg,#ffbd66,#f28b36)!important;color:#173447!important;padding:8px 12px!important;border-radius:9px!important;font-size:15px!important;letter-spacing:1px!important;box-shadow:0 5px 14px #061d2a35!important}
+#billPreview>div:first-child #pvNumber{display:inline-block!important;margin-top:8px!important;color:#fff!important;font-weight:700!important}
+#billPreview>hr{border:0!important;border-top:1px solid #e4ecee!important;margin:0 22px 17px!important}
+#billPreview>strong{display:block!important;margin:0 22px!important;color:#087c78!important;font-size:10px!important;letter-spacing:1.2px!important;text-transform:uppercase!important}
+#billPreview>p{margin-left:22px!important;margin-right:22px!important;line-height:1.55!important}
+#billPreview>p:nth-of-type(2){background:linear-gradient(110deg,#f0f7f7,#fff7ed)!important;border:1px solid #e1eceb!important;border-left:4px solid #f29a38!important;border-radius:10px!important;padding:11px 13px!important;color:#425963!important}
+#billPreview table{width:calc(100% - 44px)!important;margin:17px 22px!important;border:1px solid #dfe9eb!important;border-radius:10px!important;overflow:hidden!important;border-collapse:separate!important;border-spacing:0!important}
+#billPreview table th{background:linear-gradient(100deg,#12364e,#087c78)!important;color:#fff!important;padding:11px 9px!important;font-size:10px!important;letter-spacing:.35px!important;text-transform:uppercase!important}
+#billPreview table td{padding:11px 9px!important;border-bottom:1px solid #e8eff0!important;color:#2b414b!important}
+#billPreview table tbody tr:nth-child(even){background:#f5f9f9!important}
+#billPreview .bill-totals{max-width:290px!important;margin:18px 22px 12px auto!important;padding:13px 15px!important;background:linear-gradient(145deg,#f1f7f7,#fff7ed)!important;border:1px solid #e0e9e8!important;border-radius:12px!important}
+#billPreview .bill-totals div{padding:6px 0!important;color:#52656c!important}
+#billPreview .bill-totals .grand{margin:7px -5px 0!important;padding:12px 7px 5px!important;border-top:1px solid #cbdcda!important;color:#075d5a!important;font-size:18px!important}
+#billPreview #pvNotes{margin:16px 22px 8px!important;padding:12px 13px!important;border-top:1px solid #e4ecee!important;background:#f7faf9!important;border-radius:8px!important;color:#60716c!important}
+#billPreview>div:last-child{margin:18px 22px 22px!important;padding-top:10px!important;border-top:1px dashed #d8e3e3!important;color:#173e46!important}
+@media print{
+ body.print-bill #billPreview{padding:0!important;border:1px solid #d9e5e8!important;border-radius:0!important;box-shadow:none!important}
+ body.print-bill #billPreview:before{height:5px!important}
+ body.print-bill #billPreview>div:first-child{padding:7mm 7mm 5mm!important}
+ body.print-bill #billPreview>hr{margin:0 7mm 4mm!important}
+ body.print-bill #billPreview>strong{margin-left:7mm!important;margin-right:7mm!important}
+ body.print-bill #billPreview>p{margin-left:7mm!important;margin-right:7mm!important}
+ body.print-bill #billPreview table{width:calc(100% - 14mm)!important;margin:4mm 7mm!important}
+ body.print-bill #billPreview table th,body.print-bill #billPreview table td{padding:2.5mm 2mm!important;font-size:8.5pt!important}
+ body.print-bill #billPreview .bill-totals{margin:4mm 7mm 3mm auto!important}
+ body.print-bill #billPreview #pvNotes{margin:4mm 7mm!important}
+ body.print-bill #billPreview>div:last-child{margin:4mm 7mm 6mm!important}
+}
+
 </style></head><body>
 <header class="site-header"><a class="brand" href="index.html"><img src="logo.png" alt="Sachin Enterprises logo" style="width:74px;height:54px;object-fit:contain;border-radius:6px"><span>SACHIN <b>ENTERPRISES</b><small>TOURS & TRAVELS · PUNE</small></span></a><nav><a href="index.html">View Website</a></nav></header>
 <main class="admin-wrap">
@@ -98,7 +134,7 @@ body{background:linear-gradient(135deg,#f5f8f8 0%,#eef5f3 55%,#f8f6f1 100%);colo
  <div class="duty-hero"><div><span class="duty-badge">OPERATIONS · DUTY MANAGEMENT</span><h2 style="font-size:25px;margin:12px 0 0">Create a Duty Slip</h2><p>Independent trip record · Save, reopen and print anytime</p></div><div><strong style="font-size:13px">SACHIN ENTERPRISES</strong><div style="font-size:11px;color:#d7efeb">Tours & Travels · Pune</div></div></div>
  <div class="duty-layout"><div class="duty-form-card">
   <div class="duty-section"><h3>01 · Client & duty details</h3><div class="duty-grid">
-   <label>Duty slip number<input id="dNumber" placeholder="Auto-generated"></label><label>Duty date<input id="dDate" type="date"></label>
+   <label>Duty slip number<input id="dNumber" placeholder="Auto-generated when blank"></label><label>Duty date<input id="dDate" type="date"></label>
    <label>Client / company name<input id="dClient" placeholder="Customer or company"></label><label>Booked by<input id="dBookedBy" placeholder="Booking contact"></label>
    <label>Client mobile<input id="dClientPhone" type="tel" placeholder="Mobile number"></label><label>Duty reference<input id="dReference" placeholder="Client reference (optional)"></label>
    <label>Type of duty<select id="dType"><option>Local</option><option>Outstation</option><option>Airport Transfer</option><option>Event</option><option>Corporate</option><option>Other</option></select></label><label>Destination<input id="dDestination" placeholder="Destination / route"></label>
@@ -189,7 +225,7 @@ body{background:linear-gradient(135deg,#f5f8f8 0%,#eef5f3 55%,#f8f6f1 100%);colo
  </div>
 </section>
 
-<section id="billing" class="panel hidden"><div class="admin-card"><h2 class="section-title">Billing & document creation</h2><p class="status">Create a quotation or invoice with flexible, customer-specific items and rates. No fixed vehicle prices.</p><div class="bill-grid" style="margin-top:14px"><label>Document type<select id="bType"><option value="invoice">Tax / Sales Invoice</option><option value="quotation">Quotation / Estimate</option></select></label><label>Document number<input id="bNumber" placeholder="Auto generated if blank"></label><label>Document date<input id="bDate" type="date"></label><label>Due date<input id="bDue" type="date"></label><label>Customer name<input id="bCustomer" placeholder="Customer / Company name"></label><label>Mobile number<input id="bPhone" placeholder="Customer phone"></label><label class="wide">Billing address<textarea id="bAddress" rows="2" placeholder="Customer address"></textarea></label><label>Pickup location<input id="bFrom" placeholder="Pickup"></label><label>Destination<input id="bTo" placeholder="Destination"></label><label>Journey date<input id="bJourney" type="date"></label><label>Vehicle / category<input id="bVehicle" placeholder="e.g. 17 Seater AC Tempo Traveller"></label></div>
+<section id="billing" class="panel hidden"><div class="admin-card"><h2 class="section-title">Billing & document creation</h2><p class="status">Create a quotation or invoice with flexible, customer-specific items and rates. No fixed vehicle prices.</p><div class="bill-grid" style="margin-top:14px"><label>Document type<select id="bType"><option value="invoice">Tax / Sales Invoice</option><option value="quotation">Quotation / Estimate</option></select></label><label>Document number<input id="bNumber" placeholder="Auto-generated when blank"></label><label>Document date<input id="bDate" type="date"></label><label>Due date<input id="bDue" type="date"></label><label>Customer name<input id="bCustomer" placeholder="Customer / Company name"></label><label>Mobile number<input id="bPhone" placeholder="Customer phone"></label><label class="wide">Billing address<textarea id="bAddress" rows="2" placeholder="Customer address"></textarea></label><label>Pickup location<input id="bFrom" placeholder="Pickup"></label><label>Destination<input id="bTo" placeholder="Destination"></label><label>Journey date<input id="bJourney" type="date"></label><label>Vehicle / category<input id="bVehicle" placeholder="e.g. 17 Seater AC Tempo Traveller"></label></div>
 <h3 style="margin:22px 0 5px">Items & travel charges</h3><p class="status">Add or remove any charge. Quantity and rate are editable for every customer.</p><div style="overflow-x:auto"><table class="bill-table"><thead><tr><th>Description</th><th>Qty</th><th>Rate (₹)</th><th>Amount</th><th></th></tr></thead><tbody id="billItems"></tbody></table></div><div class="admin-actions no-print"><button id="addBillItem" class="admin-btn secondary" type="button">＋ Add item</button></div>
 <div class="bill-grid" style="margin-top:18px"><label>Discount (₹)<input id="bDiscount" type="number" min="0" value="0"></label><label>GST (%)<input id="bGst" type="number" min="0" max="100" step="0.01" value="0"></label><label>Advance received (₹)<input id="bAdvance" type="number" min="0" value="0"></label><label>Payment status<select id="bPayment"><option value="unpaid">Unpaid</option><option value="partial">Partially paid</option><option value="paid">Paid</option><option value="not_applicable">Not applicable (quotation)</option></select></label><label class="wide">Terms / notes<textarea id="bNotes" rows="3" placeholder="Payment terms, inclusions, exclusions, driver allowance, tolls, extra km, etc."></textarea></label></div>
 <div class="bill-totals"><div><span>Subtotal</span><strong id="bSubtotal">₹0.00</strong></div><div><span>Discount</span><strong id="bDiscountView">₹0.00</strong></div><div><span>GST</span><strong id="bGstView">₹0.00</strong></div><div class="grand"><span>Grand total</span><strong id="bTotal">₹0.00</strong></div><div><span>Advance</span><strong id="bAdvanceView">₹0.00</strong></div><div><span>Balance due</span><strong id="bBalance">₹0.00</strong></div></div>
