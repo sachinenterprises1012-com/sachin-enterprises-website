@@ -5,7 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sachin Enterprises - reliable car, tempo traveller and bus rentals from Pune across India.">
   <title>Sachin Enterprises | Tours & Travels</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">\n  <style>
+    .public-gallery-toolbar{margin:22px 0 18px}
+    .public-gallery-filters{display:flex;flex-wrap:wrap;gap:9px}
+    .gallery-filter{border:1px solid #d7e2e3;background:#fff;color:#173b4b;border-radius:999px;padding:9px 16px;font:inherit;font-size:.88rem;font-weight:600;cursor:pointer;transition:.2s}
+    .gallery-filter:hover,.gallery-filter.active{background:linear-gradient(110deg,#10364d,#087f78);color:#fff;border-color:transparent;box-shadow:0 5px 14px #10364d22}
+    .gallery-grid.public-gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .public-gallery-card{overflow:hidden;border:1px solid #dfe8e8;border-radius:15px;background:#fff;box-shadow:0 8px 24px #12394b0c}
+    .public-gallery-card .gallery-media{display:block;width:100%;height:205px;object-fit:cover;background:#edf3f3}
+    .public-gallery-card .gallery-card-copy{padding:12px 14px 14px}
+    .public-gallery-card .gallery-card-title{display:block;color:#173b4b;font-weight:700;font-size:.96rem;margin-bottom:5px}
+    .public-gallery-card .gallery-card-meta{display:flex;flex-wrap:wrap;gap:6px}
+    .public-gallery-card .gallery-tag{font-size:.72rem;color:#08766f;background:#e8f5f2;border-radius:999px;padding:4px 8px}
+    .gallery-empty{grid-column:1/-1;padding:28px;border:1px dashed #cbdada;border-radius:14px;color:#647b82;text-align:center;background:#f7fbfa}
+    @media(max-width:600px){.gallery-grid.public-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.public-gallery-card .gallery-media{height:145px}.public-gallery-card .gallery-card-copy{padding:9px}.gallery-filter{padding:8px 11px;font-size:.78rem}}
+  </style>
+
 </head>
 <body>
 <header class="site-header">
@@ -45,10 +60,18 @@
 
 <section class="section gallery-section" id="gallery">
   <div class="section-heading"><div><span class="eyebrow">TRAVEL MOMENTS</span><h2>Our gallery.</h2></div><p>Share photos and videos of your vehicles, trips and completed events here.</p></div>
-  <div class="gallery-grid" id="galleryGrid">
-    <div class="gallery-placeholder"><span>🚐</span><b>Vehicle photos</b><small>Gallery uploads will appear here</small></div>
+  <div class="public-gallery-toolbar">
+    <div class="public-gallery-filters" id="publicGalleryFilters" aria-label="Filter vehicle gallery">
+      <button type="button" class="gallery-filter active" data-category="All">All vehicles</button>
+      <button type="button" class="gallery-filter" data-category="Cars">Cars</button>
+      <button type="button" class="gallery-filter" data-category="Tempo Traveller & Urbania">Tempo & Urbania</button>
+      <button type="button" class="gallery-filter" data-category="Buses">Buses</button>
+      <button type="button" class="gallery-filter" data-category="Volvo">Volvo</button>
+    </div>
   </div>
-  <p class="small-note">To publish your own media, follow the simple instructions in the included README file.</p>
+  <div class="gallery-grid" id="galleryGrid" aria-live="polite">
+    <div class="gallery-placeholder"><span>🚐</span><b>Loading vehicle gallery…</b><small>Our latest vehicle photos will appear here.</small></div>
+  </div>
 </section>
 
 <section class="section quote-section" id="billing-info">
